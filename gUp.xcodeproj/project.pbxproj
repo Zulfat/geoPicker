@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1301B1841886B658009E36B2 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1301B1831886B658009E36B2 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		130661681887CD9A001AE32D /* annotationClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 130661671887CD9A001AE32D /* annotationClass.m */; };
+		13D0F76A188D15BD00E08DCA /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13D0F769188D15BD00E08DCA /* Storyboard.storyboard */; };
 		3EA61FBC186D711800D4DBBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA61FBB186D711800D4DBBC /* Foundation.framework */; };
 		3EA61FBE186D711800D4DBBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA61FBD186D711800D4DBBC /* CoreGraphics.framework */; };
 		3EA61FC0186D711800D4DBBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA61FBF186D711800D4DBBC /* UIKit.framework */; };
@@ -21,6 +24,8 @@
 		3EA61FDD186D711800D4DBBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA61FBF186D711800D4DBBC /* UIKit.framework */; };
 		3EA61FE5186D711800D4DBBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3EA61FE3186D711800D4DBBC /* InfoPlist.strings */; };
 		3EA61FE7186D711800D4DBBC /* gUpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA61FE6186D711800D4DBBC /* gUpTests.m */; };
+		3EA61FF2186D713100D4DBBC /* geoUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA61FF1186D713100D4DBBC /* geoUpdater.m */; };
+		3EA61FF4186D718A00D4DBBC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA61FF3186D718A00D4DBBC /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1301B1821886B658009E36B2 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		1301B1831886B658009E36B2 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		130661661887CD9A001AE32D /* annotationClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = annotationClass.h; sourceTree = "<group>"; };
+		130661671887CD9A001AE32D /* annotationClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = annotationClass.m; sourceTree = "<group>"; };
+		13D0F769188D15BD00E08DCA /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		3EA61FB8186D711800D4DBBC /* gUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EA61FBB186D711800D4DBBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3EA61FBD186D711800D4DBBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +63,9 @@
 		3EA61FE2186D711800D4DBBC /* gUpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gUpTests-Info.plist"; sourceTree = "<group>"; };
 		3EA61FE4186D711800D4DBBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3EA61FE6186D711800D4DBBC /* gUpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gUpTests.m; sourceTree = "<group>"; };
+		3EA61FF0186D713100D4DBBC /* geoUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geoUpdater.h; sourceTree = "<group>"; };
+		3EA61FF1186D713100D4DBBC /* geoUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = geoUpdater.m; sourceTree = "<group>"; };
+		3EA61FF3186D718A00D4DBBC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EA61FF4186D718A00D4DBBC /* CoreLocation.framework in Frameworks */,
 				3EA61FBE186D711800D4DBBC /* CoreGraphics.framework in Frameworks */,
 				3EA61FC0186D711800D4DBBC /* UIKit.framework in Frameworks */,
 				3EA61FBC186D711800D4DBBC /* Foundation.framework in Frameworks */,
@@ -101,6 +115,7 @@
 		3EA61FBA186D711800D4DBBC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3EA61FF3186D718A00D4DBBC /* CoreLocation.framework */,
 				3EA61FBB186D711800D4DBBC /* Foundation.framework */,
 				3EA61FBD186D711800D4DBBC /* CoreGraphics.framework */,
 				3EA61FBF186D711800D4DBBC /* UIKit.framework */,
@@ -115,10 +130,17 @@
 				3EA61FCA186D711800D4DBBC /* AppDelegate.h */,
 				3EA61FCB186D711800D4DBBC /* AppDelegate.m */,
 				3EA61FCD186D711800D4DBBC /* Main.storyboard */,
+				13D0F769188D15BD00E08DCA /* Storyboard.storyboard */,
 				3EA61FD0186D711800D4DBBC /* ViewController.h */,
 				3EA61FD1186D711800D4DBBC /* ViewController.m */,
+				130661661887CD9A001AE32D /* annotationClass.h */,
+				130661671887CD9A001AE32D /* annotationClass.m */,
 				3EA61FD3186D711800D4DBBC /* Images.xcassets */,
 				3EA61FC2186D711800D4DBBC /* Supporting Files */,
+				3EA61FF0186D713100D4DBBC /* geoUpdater.h */,
+				3EA61FF1186D713100D4DBBC /* geoUpdater.m */,
+				1301B1821886B658009E36B2 /* JSONKit.h */,
+				1301B1831886B658009E36B2 /* JSONKit.m */,
 			);
 			path = gUp;
 			sourceTree = "<group>";
@@ -229,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EA61FD4186D711800D4DBBC /* Images.xcassets in Resources */,
+				13D0F76A188D15BD00E08DCA /* Storyboard.storyboard in Resources */,
 				3EA61FC6186D711800D4DBBC /* InfoPlist.strings in Resources */,
 				3EA61FCF186D711800D4DBBC /* Main.storyboard in Resources */,
 			);
@@ -250,8 +273,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EA61FD2186D711800D4DBBC /* ViewController.m in Sources */,
+				130661681887CD9A001AE32D /* annotationClass.m in Sources */,
 				3EA61FCC186D711800D4DBBC /* AppDelegate.m in Sources */,
 				3EA61FC8186D711800D4DBBC /* main.m in Sources */,
+				3EA61FF2186D713100D4DBBC /* geoUpdater.m in Sources */,
+				1301B1841886B658009E36B2 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +407,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gUp/gUp-Prefix.pch";
 				INFOPLIST_FILE = "gUp/gUp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -394,7 +422,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gUp/gUp-Prefix.pch";
 				INFOPLIST_FILE = "gUp/gUp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -460,6 +490,7 @@
 				3EA61FEC186D711800D4DBBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EA61FED186D711800D4DBBC /* Build configuration list for PBXNativeTarget "gUpTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +499,7 @@
 				3EA61FEF186D711800D4DBBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "geoUpdater.h"
+#import <CoreLocation/CoreLocation.h>
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
