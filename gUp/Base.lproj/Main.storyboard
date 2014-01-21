@@ -16,45 +16,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ov6-EY-QDG">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ov6-EY-QDG">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="274"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KnH-j9-RrT">
-                                        <rect key="frame" x="20" y="20" width="51" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Готово">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="Ready:" destination="eCA-9G-12K" eventType="touchUpInside" id="LbN-Qe-G10"/>
-                                        </connections>
-                                    </button>
+                                    <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sA8-GM-gqW">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <items>
+                                            <navigationItem title="Геопозиция" id="o8b-x2-aIc">
+                                                <barButtonItem key="leftBarButtonItem" title="Назад" id="3U2-sU-wwt"/>
+                                                <barButtonItem key="rightBarButtonItem" title="Готово" id="uLm-oZ-UpV"/>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="sA8-GM-gqW" firstAttribute="top" secondItem="ov6-EY-QDG" secondAttribute="top" constant="22" id="Trx-XI-9n7"/>
+                                </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="uWf-3I-CaN">
-                                <rect key="frame" x="0.0" y="282" width="320" height="293"/>
+                            <tabBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B9b-0G-3cR">
+                                <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Места" id="lvX-jh-k7i"/>
+                                    <tabBarItem title="Выбрать на карте" id="umr-O8-1Eg"/>
+                                    <tabBarItem title="Текущее положение" id="S9r-HR-9el"/>
+                                </items>
+                                <connections>
+                                    <outlet property="delegate" destination="eCA-9G-12K" id="KR9-ac-0bE"/>
+                                </connections>
+                            </tabBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="EVl-sF-IXc">
+                                <rect key="frame" x="0.0" y="282" width="320" height="237"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="eCA-9G-12K" id="CMk-Mj-Wcx"/>
-                                    <outlet property="delegate" destination="eCA-9G-12K" id="ORl-zz-bY7"/>
+                                    <outlet property="dataSource" destination="eCA-9G-12K" id="4Gb-G4-8ro"/>
+                                    <outlet property="delegate" destination="eCA-9G-12K" id="GeF-nC-m7B"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="B9b-0G-3cR" firstAttribute="top" secondItem="EVl-sF-IXc" secondAttribute="bottom" id="5FT-w1-4kB"/>
+                            <constraint firstAttribute="trailing" secondItem="ov6-EY-QDG" secondAttribute="trailing" id="J0E-Cu-Xxa"/>
+                            <constraint firstItem="ov6-EY-QDG" firstAttribute="leading" secondItem="qw8-FQ-pYm" secondAttribute="leading" id="PJP-2q-OWF"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="ov6-EY-QDG" id="N9m-Nv-f5k"/>
-                        <outlet property="table" destination="uWf-3I-CaN" id="zoG-dj-MFF"/>
+                        <outlet property="spaceTapBar" destination="5FT-w1-4kB" id="wzA-4m-Aki"/>
+                        <outlet property="table" destination="EVl-sF-IXc" id="nTY-c1-Tz6"/>
+                        <outlet property="tapBar" destination="B9b-0G-3cR" id="n26-dP-WTL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1d-iK-W4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="575" y="24"/>
+            <point key="canvasLocation" x="675" y="-11"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

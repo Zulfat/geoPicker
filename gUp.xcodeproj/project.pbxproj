@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1301B1841886B658009E36B2 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1301B1831886B658009E36B2 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		130661681887CD9A001AE32D /* annotationClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 130661671887CD9A001AE32D /* annotationClass.m */; };
-		13D0F76A188D15BD00E08DCA /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13D0F769188D15BD00E08DCA /* Storyboard.storyboard */; };
+		130A7818188E6EC400325A41 /* images-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 130A7817188E6EC400325A41 /* images-1.jpg */; };
+		13D0F771188D35C600E08DCA /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D0F76E188D35C600E08DCA /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3EA61FBC186D711800D4DBBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA61FBB186D711800D4DBBC /* Foundation.framework */; };
 		3EA61FBE186D711800D4DBBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA61FBD186D711800D4DBBC /* CoreGraphics.framework */; };
 		3EA61FC0186D711800D4DBBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA61FBF186D711800D4DBBC /* UIKit.framework */; };
@@ -39,11 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1301B1821886B658009E36B2 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		1301B1831886B658009E36B2 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		130661661887CD9A001AE32D /* annotationClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = annotationClass.h; sourceTree = "<group>"; };
-		130661671887CD9A001AE32D /* annotationClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = annotationClass.m; sourceTree = "<group>"; };
-		13D0F769188D15BD00E08DCA /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		130A7817188E6EC400325A41 /* images-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-1.jpg"; sourceTree = "<group>"; };
+		13D0F76D188D35C600E08DCA /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = "JSONKit-master/JSONKit.h"; sourceTree = "<group>"; };
+		13D0F76E188D35C600E08DCA /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = "JSONKit-master/JSONKit.m"; sourceTree = "<group>"; };
 		3EA61FB8186D711800D4DBBC /* gUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EA61FBB186D711800D4DBBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3EA61FBD186D711800D4DBBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,17 +127,15 @@
 				3EA61FCA186D711800D4DBBC /* AppDelegate.h */,
 				3EA61FCB186D711800D4DBBC /* AppDelegate.m */,
 				3EA61FCD186D711800D4DBBC /* Main.storyboard */,
-				13D0F769188D15BD00E08DCA /* Storyboard.storyboard */,
+				130A7817188E6EC400325A41 /* images-1.jpg */,
 				3EA61FD0186D711800D4DBBC /* ViewController.h */,
 				3EA61FD1186D711800D4DBBC /* ViewController.m */,
-				130661661887CD9A001AE32D /* annotationClass.h */,
-				130661671887CD9A001AE32D /* annotationClass.m */,
 				3EA61FD3186D711800D4DBBC /* Images.xcassets */,
 				3EA61FC2186D711800D4DBBC /* Supporting Files */,
 				3EA61FF0186D713100D4DBBC /* geoUpdater.h */,
 				3EA61FF1186D713100D4DBBC /* geoUpdater.m */,
-				1301B1821886B658009E36B2 /* JSONKit.h */,
-				1301B1831886B658009E36B2 /* JSONKit.m */,
+				13D0F76E188D35C600E08DCA /* JSONKit.m */,
+				13D0F76D188D35C600E08DCA /* JSONKit.h */,
 			);
 			path = gUp;
 			sourceTree = "<group>";
@@ -251,7 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EA61FD4186D711800D4DBBC /* Images.xcassets in Resources */,
-				13D0F76A188D15BD00E08DCA /* Storyboard.storyboard in Resources */,
+				130A7818188E6EC400325A41 /* images-1.jpg in Resources */,
 				3EA61FC6186D711800D4DBBC /* InfoPlist.strings in Resources */,
 				3EA61FCF186D711800D4DBBC /* Main.storyboard in Resources */,
 			);
@@ -273,11 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EA61FD2186D711800D4DBBC /* ViewController.m in Sources */,
-				130661681887CD9A001AE32D /* annotationClass.m in Sources */,
 				3EA61FCC186D711800D4DBBC /* AppDelegate.m in Sources */,
 				3EA61FC8186D711800D4DBBC /* main.m in Sources */,
 				3EA61FF2186D713100D4DBBC /* geoUpdater.m in Sources */,
-				1301B1841886B658009E36B2 /* JSONKit.m in Sources */,
+				13D0F771188D35C600E08DCA /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
